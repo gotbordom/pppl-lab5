@@ -29,6 +29,9 @@ parse("function (x: var number) { x = 0; return x }")
 parse("var y = 1; (function (x: ref number) { x = 0; return x })(y)")
 parse("((x: name number) => 0)(console.log(100))")
 
+
+
+
 // Aliasing example
 val aliasingex = parse("""
   const x = { f: 1 }
